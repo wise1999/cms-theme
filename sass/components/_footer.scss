@@ -1,0 +1,190 @@
+footer.page-footer {
+  .newsletter {
+    background-color: $primary;
+    color: #fff;
+    padding: 50px 0;
+
+    .row {
+      align-items: center;
+    }
+
+    h5 {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+
+      input[type="email"] {
+        border: none;
+        border-bottom: 1px solid #fff;
+        color: $black;
+        width: 90%;
+
+        &::placeholder {
+          color: #fff;
+        }
+      }
+
+      input[type="submit"] {
+      }
+    }
+  }
+
+  .footer {
+    background-color: $darkgray;
+    padding-top: 75px;
+    padding-bottom: 15px;
+    color: #fff;
+
+    h5 {
+      font-size: 20px;
+      color: #fff;
+      margin-bottom: 25px;
+
+      @include media-breakpoint-down(lg) {
+        text-align: center;
+      }
+    }
+
+    p {
+      color: $text;
+
+      @include media-breakpoint-down(lg) {
+        text-align: center;
+      }
+    }
+
+    a {
+      color: #fff;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+
+    span {
+      text-align: center;
+      display: block;
+      font-size: 16px;
+
+      a {
+        color: $primary;
+        font-weight: 700;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .border-line {
+      width: 100%;
+      height: 1px;
+      background-color: $text;
+      margin: 25px 0;
+    }
+
+    .row-footer-items {
+      .footer-menu {
+        margin-bottom: 25px;
+
+        li {
+          margin: 5px 0;
+
+          &:first-child {
+            margin-top: 0;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+
+        a {
+          color: $text;
+          font-size: 18px;
+
+          &:hover {
+            color: $primary;
+          }
+        }
+
+        @include media-breakpoint-down(lg) {
+          text-align: center;
+        }
+
+        .tags-list {
+          display: flex;
+          flex-wrap: wrap;
+          li {
+            margin: 5px;
+
+            a {
+              background-color: darken($darkgray, 5);
+              color: #fff;
+              padding: 2.5px 7.5px;
+              display: flex;
+              font-size: 12px;
+              flex-direction: row-reverse;
+              align-items: center;
+              width: max-content;
+              border-radius: 20px;
+              font-weight: 300;
+              span {
+                margin-left: 2.5px;
+                background-color: $darkgray;
+                color: #fff;
+                font-weight: 300;
+                display: block;
+                font-size: 12px;
+                padding: 2.5px 5px;
+                width: max-content;
+                border-radius: 10px;
+                transition: all 0.3s ease-in-out;
+              }
+
+              &:hover {
+                background-color: $text;
+
+                span {
+                  background-color: $darker;
+                }
+              }
+            }
+          }
+          @include media-breakpoint-down(md) {
+            justify-content: center;
+          }
+        }
+      }
+
+      form {
+        display: flex;
+        width: 100%;
+
+        input[type="search"] {
+          border: 1px solid $text;
+          padding-left: 10px;
+          color: #fff;
+        }
+
+        .main-button {
+          border-radius: 0;
+        }
+
+        @include media-breakpoint-down(lg) {
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

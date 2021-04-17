@@ -1,0 +1,267 @@
+section#contact {
+    padding: 75px 0;
+
+    form {
+        padding: 50px;
+        background-color: #fff;
+        border-radius: 10px;
+
+        .name-row {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            label {
+                width: 47.5%;
+
+                @include media-breakpoint-down(xs) {
+                    width: 100%;
+                }
+            }
+
+            @include media-breakpoint-down(xs) {
+                flex-direction: column;
+            }
+        }
+
+        label {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+
+            span {
+                display: block;
+                margin-bottom: 10px;
+                color: #000;
+            }
+
+            input {
+                border: 1px solid lightgray;
+                height: 45px;
+            }
+
+            textarea {
+                border: 1px solid lightgray;
+                min-height: 200px;
+                padding-top: 5px;
+            }
+
+            input,
+            textarea {
+                padding-left: 15px;
+                color: $text;
+                line-height: 1.5;
+                transition: all .3s ease-in-out;
+
+                &:hover {
+                    border: 1px solid $primary;
+                }
+            }
+
+            .captcha-holder {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: flex-start;
+
+                input {
+                    width: 47.5%;
+
+                    @include media-breakpoint-down(xs) {
+                        width: 100%;
+                        margin-bottom: 15px;
+                    }
+                }
+
+                .captcha-img {
+                    margin-left: 45px;
+                    height: 45px;
+                    display: block;
+                    width: 160px;
+                    background-color: $primary;
+
+                    @include media-breakpoint-down(xs) {
+                        margin: 0 auto;
+                    }
+                }
+
+                .captcha-action {
+                    display: flex;
+                    flex-direction: row;
+
+                    @include media-breakpoint-down(xs) {
+                        justify-content: center;
+                    }
+
+                    .captcha-img {
+                        @include media-breakpoint-down(xs) {
+                            margin: 0;
+                        }
+                    }
+                }
+
+                button {
+                    margin-left: 25px;
+                    background-color: $primary;
+                    padding: 0 15px;
+                    border-radius: 10px;
+                    transition: all .3s ease-in-out;
+
+                    i,
+                    svg {
+                        color: #fff;
+                    }
+
+                    &:hover,
+                    &:focus {
+                        background-color: $darker;
+                    }
+
+                    @include media-breakpoint-down(xs) {
+                        width: max-content;
+                        height: 45px;
+                    }
+                }
+
+                @include media-breakpoint-down(xs) {
+                    flex-direction: column;
+                }
+            }
+        }
+
+        .rodo {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            margin-bottom: 20px;
+
+            label {
+                margin-bottom: 0;
+
+                span {
+                    color: $text;
+                    font-size: 14px;
+                    margin-bottom: 0;
+
+                    a {
+                        color: $primary;
+                    }
+                }
+            }
+
+            input {
+                margin-right: 15px;
+                margin-top: 5px;
+            }
+        }
+
+        .hold-buttons {
+            margin-top: 25px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+
+            button {
+                margin-right: 25px;
+
+                @include media-breakpoint-down(xs) {
+                    margin: 0 auto 15px;
+                    text-align: center;
+                }
+            }
+
+            button,
+            a {
+
+                i,
+                svg {
+                    margin-right: 5px;
+                }
+            }
+
+            a {
+                @include media-breakpoint-down(xs) {
+                    margin: 0 auto;
+                    text-align: center;
+                }
+            }
+
+            @include media-breakpoint-down(xs) {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 35px;
+            padding: 35px;
+        }
+    }
+
+    .address-data {
+        padding: 50px;
+        background-color: #fff;
+        border-radius: 10px;
+        margin-bottom: 60px;
+
+        ul {
+            li {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+
+                strong {
+                    font-size: 18px;
+                    display: block;
+                    margin-bottom: 10px;
+                }
+
+                span {
+                    color: $text;
+                    font-size: 18px;
+                    font-weight: 300;
+                }
+
+                a {
+                    color: $primary;
+                    font-size: 18px;
+
+                    &:hover {
+                        color: $darker;
+                    }
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 35px;
+            padding: 35px;
+        }
+    }
+
+    .more-info {
+        padding: 50px;
+        background-color: #fff;
+        border-radius: 10px;
+
+        p {
+            color: $text;
+            font-size: 18px;
+            font-weight: 300;
+            margin-bottom: 25px;
+            text-align: justify;
+        }
+
+        @include media-breakpoint-down(lg) {
+            padding: 35px;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        padding: 50px 0;
+    }
+}

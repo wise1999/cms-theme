@@ -1,0 +1,1283 @@
+section#archive-ads {
+  padding: 75px 0;
+  h5 {
+    color: #000;
+    font-size: 22px;
+  }
+  .hold-categories {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    h5 {
+      margin-bottom: 25px;
+    }
+    .card-body {
+      ul {
+        li {
+          margin: 7.5px 0;
+          position: relative;
+          padding-left: 40px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          a {
+            color: $text;
+            font-weight: 500;
+            &:hover {
+              color: $primary;
+            }
+          }
+          &:first-child {
+            margin-top: 0;
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+          &:before {
+            content: "";
+            position: absolute;
+            border-right: 3px solid $primary;
+            border-bottom: 3px solid $primary;
+            width: 9px;
+            height: 9px;
+            top: calc(50%);
+            transform: translateY(-50%);
+            left: 20px;
+            transform: translateY(-50%) rotate(-45deg);
+          }
+          &.active {
+            a {
+              color: $primary;
+            }
+          }
+          .count {
+            font-size: 12px;
+            color: #fff;
+            background-color: $primary;
+            display: flex;
+            align-items: center;
+            padding: 2px 5px;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+  .hold-companies {
+    padding: 30px 30px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    .title-count {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .count {
+        font-weight: 300;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        span {
+          margin-left: 10px;
+          background-color: $darker;
+          color: #fff;
+          display: block;
+          height: max-content;
+          width: max-content;
+          border-radius: 25px;
+          padding: 5px 15px;
+          text-align: center;
+        }
+        @include media-breakpoint-down(sm) {
+          margin-top: 10px;
+        }
+      }
+      @include media-breakpoint-down(sm) {
+        flex-direction: column;
+        justify-content: center;
+      }
+      h5 {
+        span {
+          color: $primary;
+        }
+      }
+    }
+    .companies-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      .single-company {
+        transition: all 0.3s ease-in-out;
+        width: 100%;
+        margin: 30px 0;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        .image-permalink {
+          display: block;
+          width: 40%;
+          @include media-breakpoint-down(md) {
+            width: 70%;
+          }
+          @include media-breakpoint-down(xs) {
+            width: 100%;
+          }
+        }
+        .company-logo {
+          height: 200px;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+          @include media-breakpoint-down(md) {
+            height: 160px;
+          }
+        }
+        .company-box {
+          padding: 10px 0 10px 20px;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          justify-content: space-between;
+          width: 100%;
+          @include media-breakpoint-down(xs) {
+            padding: 0;
+            padding-top: 20px;
+          }
+        }
+        .h2-price {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          justify-content: space-between;
+          align-items: center;
+          .price {
+            font-size: 20px;
+            font-weight: 700;
+            color: #000;
+          }
+          h2 {
+            font-size: 24px;
+            margin-bottom: 0;
+            a {
+              color: $primary;
+            }
+            &:hover {
+              a {
+                color: $black;
+              }
+            }
+            @include media-breakpoint-down(xs) {
+              font-size: 20px !important;
+            }
+          }
+          @include media-breakpoint-down(xs) {
+            margin-bottom: 20px;
+          }
+        }
+        .location {
+          display: block;
+          margin: 0;
+          color: $text;
+          i,
+          svg {
+            margin-right: 10px;
+            color: $primary;
+          }
+          a {
+            color: $text;
+            &:hover {
+              color: $black;
+            }
+          }
+          .fa-angle-right {
+            color: $primary;
+            margin: 0 2.5px;
+          }
+        }
+        @include media-breakpoint-down(sm) {
+          width: 100%;
+        }
+        @include media-breakpoint-down(xs) {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+  .archive-count {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: $text;
+    align-items: center;
+    ul {
+      display: flex;
+      flex-direction: row;
+      li {
+        border-radius: 5px;
+        margin: 0 2.5px;
+        &.active {
+          background-color: $primary;
+          a {
+            color: #fff;
+          }
+        }
+        a,
+        span {
+          padding: 5px 10px;
+          display: block;
+          color: $text;
+        }
+        a {
+          border-radius: 5px;
+          &:hover {
+            background-color: $primary;
+            color: #fff;
+          }
+        }
+      }
+      @include media-breakpoint-down(sm) {
+        margin-top: 20px;
+      }
+    }
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 50px;
+    }
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    padding: 50px 0;
+  }
+  .row-archive {
+    @include media-breakpoint-down(lg) {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+section#single_ad {
+  padding: 75px 0;
+  .left-column {
+    border-radius: 10px;
+    padding: 30px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    .image-holder {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        display: block;
+      }
+      @include media-breakpoint-down(lg) {
+        height: 350px;
+      }
+    }
+  }
+  .lower-left {
+    border-radius: 10px;
+    padding: 30px;
+    background-color: #fff;
+    .price {
+      font-size: 24px;
+      margin-bottom: 25px;
+      big {
+        font-weight: 700;
+      }
+    }
+    .desc {
+      text-align: justify;
+    }
+    .line-border {
+      width: 100%;
+      height: 2px;
+      background-color: lightgray;
+      margin: 25px 0;
+    }
+    .ads-data {
+      span {
+        font-weight: 300;
+        margin-right: 25px;
+        font-size: 14px;
+        strong {
+          font-weight: 700;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 20px;
+    }
+  }
+  .hold-user {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    h5 {
+      margin-bottom: 25px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .user {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      margin-bottom: 25px;
+      .user-permalink {
+        display: block;
+        height: max-content;
+        img {
+          height: 90px;
+          width: 90px;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+      }
+      .user-data {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h3 {
+          font-size: 24px;
+          a {
+            color: #000;
+          }
+          &:hover {
+            a {
+              color: $primary;
+            }
+          }
+        }
+        span {
+          font-weight: 300;
+          font-size: 14px;
+          color: $text;
+        }
+        .user-lists {
+          color: $primary;
+          font-size: 16px;
+          font-weight: 700;
+          &:hover {
+            color: $darker;
+          }
+        }
+        @include media-breakpoint-down(xl) {
+          width: 50%;
+        }
+        @include media-breakpoint-down(lg) {
+          width: unset;
+          margin-left: 25px;
+        }
+      }
+      @include media-breakpoint-down(lg) {
+        justify-content: center;
+      }
+    }
+    .hold-buttons {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-around;
+      @include media-breakpoint-down(xl) {
+        flex-direction: column;
+      }
+      a {
+        @include media-breakpoint-down(xl) {
+          width: 100%;
+          place-content: center;
+          margin: 5px 0;
+        }
+      }
+    }
+  }
+  .hold-location {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    h5 {
+      margin-bottom: 25px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    span {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: $text;
+      margin-bottom: 20px;
+      svg,
+      i {
+        color: $primary;
+        font-size: 25px;
+        margin-right: 20px;
+      }
+    }
+  }
+  iframe {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+  }
+  @include media-breakpoint-down(lg) {
+    padding: 50px 0;
+  }
+}
+
+section#single-user {
+  padding: 75px 0;
+  .user-list {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    h5 {
+      margin-bottom: 25px;
+      span {
+        color: $primary;
+      }
+    }
+    .single-company {
+      transition: all 0.3s ease-in-out;
+      width: 100%;
+      margin: 30px 0;
+      display: flex;
+      flex-direction: row;
+      .image-permalink {
+        display: block;
+        width: 40%;
+        @include media-breakpoint-down(md) {
+          width: 70%;
+        }
+        @include media-breakpoint-down(xs) {
+          width: 100%;
+        }
+      }
+      .company-logo {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        @include media-breakpoint-down(md) {
+          height: 160px;
+        }
+      }
+      .company-box {
+        padding: 10px 0 10px 20px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: space-between;
+        width: 100%;
+        @include media-breakpoint-down(xs) {
+          padding: 0;
+          padding-top: 20px;
+        }
+      }
+      .h2-price {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        .price {
+          font-size: 20px;
+          font-weight: 700;
+          color: #000;
+        }
+        h2 {
+          font-size: 24px;
+          margin-bottom: 0;
+          a {
+            color: $primary;
+          }
+          &:hover {
+            a {
+              color: $black;
+            }
+          }
+          @include media-breakpoint-down(xs) {
+            font-size: 20px !important;
+          }
+        }
+        @include media-breakpoint-down(xs) {
+          margin-bottom: 20px;
+        }
+      }
+      .location {
+        display: block;
+        margin: 0;
+        color: $text;
+        i,
+        svg {
+          margin-right: 10px;
+          color: $primary;
+        }
+        a {
+          color: $text;
+          &:hover {
+            color: $black;
+          }
+        }
+        .fa-angle-right {
+          color: $primary;
+          margin: 0 2.5px;
+        }
+      }
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+      }
+      @include media-breakpoint-down(xs) {
+        flex-direction: column;
+      }
+    }
+  }
+  .user-info {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    img {
+      height: 150px;
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+      margin-bottom: 25px;
+    }
+    h5 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    span {
+      text-align: center;
+      display: block;
+      color: $text;
+      svg,
+      i {
+        color: $primary;
+        margin-right: 10px;
+      }
+    }
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 20px;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    padding: 50px 0;
+  }
+  .row {
+    @include media-breakpoint-down(lg) {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+section#archive-shop {
+  padding: 75px 0 0;
+  h2 {
+    color: $black;
+    strong {
+      color: $primary;
+    }
+  }
+
+  .row-title {
+    margin-bottom: 50px;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 25px;
+    }
+  }
+
+  .row-newest-products {
+    margin-bottom: 75px;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 50px;
+    }
+
+    .single-advertisement {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 35px;
+      transition: all 0.3s ease-in-out;
+
+      .ad-desc {
+        width: 100%;
+        padding: 20px 30px 20px 30px;
+
+        @include media-breakpoint-down(lg) {
+          width: 100%;
+        }
+      }
+
+      .permalink {
+        display: block;
+        width: 100%;
+
+        @include media-breakpoint-down(lg) {
+          width: 100%;
+        }
+      }
+
+      img {
+        height: 263px;
+        object-fit: cover;
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+        @include media-breakpoint-down(lg) {
+          border-bottom-left-radius: 0;
+          border-top-right-radius: 10px;
+        }
+      }
+
+      .cat-follow {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+
+        .cat {
+          background-color: lightgray;
+          border-radius: 25px;
+          padding: 5px 15px;
+          display: block;
+          width: max-content;
+          font-size: 12px;
+
+          a {
+            color: $black;
+          }
+        }
+
+        .follow {
+          border-radius: 50px;
+          width: 35px;
+          height: 35px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #f8f9fa;
+          transition: all 0.3s ease-in-out;
+
+          i,
+          svg {
+            color: $primary;
+            transition: all 0.3s ease-in-out;
+          }
+
+          &:hover {
+            background-color: lightgray;
+
+            i,
+            svg {
+              color: $darker;
+            }
+          }
+        }
+      }
+
+      h5 {
+        text-transform: unset;
+        font-size: 20px;
+        height: 95px;
+        margin-bottom: 10px;
+
+        a {
+          color: $primary;
+        }
+
+        &:hover {
+          a {
+            color: $black;
+          }
+        }
+      }
+
+      .price {
+        display: block;
+        margin-bottom: 20px;
+        font-weight: 600;
+        color: $text;
+      }
+
+      .local {
+        display: block;
+        color: $text;
+
+        i,
+        svg {
+          margin-right: 10px;
+          color: $primary;
+        }
+      }
+
+      &:hover {
+        box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.15);
+
+        @include media-breakpoint-down(lg) {
+          box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      @include media-breakpoint-down(lg) {
+        flex-direction: column;
+      }
+    }
+
+    .owl-nav {
+      display: flex;
+      justify-content: center;
+
+      button {
+        font-size: 60px;
+        font-weight: 400;
+        margin: 0 25px;
+        color: $text;
+        transition: all 0.3s ease-in-out;
+
+        &:hover,
+        &:focus {
+          color: $primary;
+        }
+      }
+    }
+  }
+
+  .row-last-seen {
+    .single-advertisement {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 35px;
+      transition: all 0.3s ease-in-out;
+
+      .ad-desc {
+        width: 100%;
+        padding: 10px 15px 10px 15px;
+
+        @include media-breakpoint-down(lg) {
+          width: 100%;
+        }
+      }
+
+      .permalink {
+        display: block;
+        width: 100%;
+
+        @include media-breakpoint-down(lg) {
+          width: 100%;
+        }
+      }
+
+      img {
+        height: 200px;
+        object-fit: cover;
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+        @include media-breakpoint-down(lg) {
+          border-bottom-left-radius: 0;
+          border-top-right-radius: 10px;
+        }
+      }
+
+      .cat-follow {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+
+        .cat {
+          background-color: lightgray;
+          border-radius: 25px;
+          padding: 5px 15px;
+          display: block;
+          width: max-content;
+          font-size: 12px;
+
+          a {
+            color: $black;
+          }
+        }
+
+        .follow {
+          border-radius: 50px;
+          width: 35px;
+          height: 35px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #f8f9fa;
+          transition: all 0.3s ease-in-out;
+
+          i,
+          svg {
+            color: $primary;
+            transition: all 0.3s ease-in-out;
+          }
+
+          &:hover {
+            background-color: lightgray;
+
+            i,
+            svg {
+              color: $darker;
+            }
+          }
+        }
+      }
+
+      h5 {
+        text-transform: unset;
+        font-size: 18px;
+        height: 75px;
+        margin-bottom: 10px;
+
+        a {
+          color: $primary;
+        }
+
+        &:hover {
+          a {
+            color: $black;
+          }
+        }
+      }
+
+      .price {
+        display: block;
+        margin-bottom: 20px;
+        font-weight: 600;
+        color: $text;
+      }
+
+      .local {
+        display: block;
+        color: $text;
+
+        i,
+        svg {
+          margin-right: 10px;
+          color: $primary;
+        }
+      }
+
+      &:hover {
+        box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.15);
+
+        @include media-breakpoint-down(lg) {
+          box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      @include media-breakpoint-down(lg) {
+        flex-direction: column;
+      }
+    }
+
+    .owl-nav {
+      display: flex;
+      justify-content: center;
+
+      button {
+        font-size: 60px;
+        font-weight: 400;
+        margin: 0 25px;
+        color: $text;
+        transition: all 0.3s ease-in-out;
+
+        &:hover,
+        &:focus {
+          color: $primary;
+        }
+      }
+    }
+  }
+
+  .row-popular-items {
+    margin-bottom: 50px;
+    .single-advertisement {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: 35px;
+      transition: all 0.3s ease-in-out;
+
+      .ad-desc {
+        width: 55%;
+        padding: 20px 30px 20px 30px;
+
+        @include media-breakpoint-down(lg) {
+          width: 100%;
+        }
+      }
+
+      .permalink {
+        display: block;
+        width: 45%;
+
+        @include media-breakpoint-down(lg) {
+          width: 100%;
+        }
+      }
+
+      img {
+        height: 263px;
+        object-fit: cover;
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+
+        @include media-breakpoint-down(lg) {
+          border-bottom-left-radius: 0;
+          border-top-right-radius: 10px;
+        }
+      }
+
+      .cat-follow {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+
+        .cat {
+          background-color: lightgray;
+          border-radius: 25px;
+          padding: 5px 15px;
+          display: block;
+          width: max-content;
+          font-size: 12px;
+
+          a {
+            color: $black;
+          }
+        }
+
+        .follow {
+          border-radius: 50px;
+          width: 35px;
+          height: 35px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #f8f9fa;
+          transition: all 0.3s ease-in-out;
+
+          i,
+          svg {
+            color: $primary;
+            transition: all 0.3s ease-in-out;
+          }
+
+          &:hover {
+            background-color: lightgray;
+
+            i,
+            svg {
+              color: $darker;
+            }
+          }
+        }
+      }
+
+      h5 {
+        text-transform: unset;
+        font-size: 20px;
+        height: 95px;
+        margin-bottom: 10px;
+
+        a {
+          color: $primary;
+        }
+
+        &:hover {
+          a {
+            color: $black;
+          }
+        }
+      }
+
+      .price {
+        display: block;
+        margin-bottom: 20px;
+        font-weight: 600;
+        color: $text;
+      }
+
+      .local {
+        display: block;
+        color: $text;
+        margin-top: 25px;
+        i,
+        svg {
+          margin-right: 10px;
+          color: $primary;
+        }
+      }
+
+      &:hover {
+        box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.15);
+
+        @include media-breakpoint-down(lg) {
+          box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      @include media-breakpoint-down(lg) {
+        flex-direction: column;
+      }
+    }
+
+    .owl-dots {
+      display: none;
+    }
+
+    .owl-nav {
+      display: flex;
+      justify-content: center;
+
+      button {
+        font-size: 60px;
+        font-weight: 400;
+        margin: 0 25px;
+        color: $text;
+        transition: all 0.3s ease-in-out;
+
+        &:hover,
+        &:focus {
+          color: $primary;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    margin-bottom: 50px;
+  }
+
+  .row-companies {
+    margin-bottom: 75px;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 50px;
+    }
+
+    .single-company {
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.1);
+      img {
+        height: 200px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+
+      .text-holder {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-color: #fff;
+        padding: 25px 15px;
+        text-align: left;
+        a {
+          text-align: left;
+          color: $primary;
+
+          &:hover {
+            color: $darker;
+          }
+        }
+        span {
+          color: $text;
+          margin-top: 5px;
+          display: block;
+          a {
+            color: $text;
+          }
+        }
+        .location {
+          display: block;
+          margin: 0;
+          color: $text;
+          margin-top: 15px;
+          i,
+          svg {
+            margin-right: 10px;
+            color: $primary;
+          }
+          a {
+            color: $text;
+            &:hover {
+              color: $black;
+            }
+          }
+          .fa-angle-right {
+            color: $primary;
+            margin: 0 2.5px;
+          }
+        }
+      }
+    }
+
+    .owl-dots {
+      display: none;
+    }
+
+    .owl-nav {
+      display: flex;
+      justify-content: center;
+
+      button {
+        font-size: 60px;
+        font-weight: 400;
+        margin: 0 25px;
+        color: $text;
+        transition: all 0.3s ease-in-out;
+
+        &:hover,
+        &:focus {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+section#blacked-categories {
+  padding: 75px 0;
+  background-color: $darkgray;
+
+  .row-title {
+    margin-bottom: 50px;
+
+    h2 {
+      color: #fff;
+
+      strong {
+        color: $primary;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 25px;
+    }
+  }
+
+  .row-categories {
+    .cats-tile {
+      background-color: $text;
+      padding: 25px 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.1);
+      ul {
+        li {
+          color: #fff;
+          margin: 7.5px 0;
+          position: relative;
+          padding-left: 40px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          transition: all 0.3s ease-in-out;
+          a {
+            color: #fff;
+            font-weight: 500;
+          }
+          &:first-child {
+            margin-top: 0;
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+          &:before {
+            content: "";
+            position: absolute;
+            border-right: 3px solid $primary;
+            border-bottom: 3px solid $primary;
+            width: 9px;
+            height: 9px;
+            top: calc(50%);
+            transform: translateY(-50%);
+            left: 20px;
+            transform: translateY(-50%) rotate(-45deg);
+          }
+          &.active {
+            a {
+              color: $primary;
+            }
+          }
+          .count {
+            font-size: 12px;
+            color: #fff;
+            background-color: $primary;
+            display: flex;
+            align-items: center;
+            padding: 2px 5px;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+          }
+
+          &:hover {
+            a {
+              color: $primary;
+            }
+
+            .count {
+              background-color: $darker;
+            }
+          }
+        }
+      }
+    }
+
+    .owl-dots {
+      display: none;
+    }
+
+    .owl-nav {
+      display: flex;
+      justify-content: center;
+
+      button {
+        font-size: 45px;
+        font-weight: 400;
+        margin: 0 25px;
+        color: #fff;
+        transition: all 0.3s ease-in-out;
+
+        &:hover,
+        &:focus {
+          color: $primary;
+        }
+      }
+    }
+  }
+}

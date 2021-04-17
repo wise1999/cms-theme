@@ -1,0 +1,49 @@
+.main-button {
+    color: #fff;
+    background-color: $primary;
+    border-radius: 4px;
+    padding: 11px 20px;
+    display: flex;
+    width: max-content;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 900;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        color: #fff;
+        background-color: $darker;
+    }
+}
+
+.second-button {
+    font-size: 16px;
+    width: max-content;
+    color: #000;
+    background-color: whitesmoke;
+    padding: 10px 20px;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        background-color: $black;
+        color: #fff;
+    }
+}
+
+.gray-button {
+    color: #fff;
+    background-color: $text;
+    opacity: .75;
+    border-radius: 4px;
+    padding: 11px 20px;
+    display: flex;
+    width: max-content;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 900;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        opacity: 1;
+    }
+}

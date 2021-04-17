@@ -1,0 +1,184 @@
+section#register_login {
+    padding: 75px 0;
+
+
+    .action_wrapper {
+        padding: 30px;
+        border-radius: 10px;
+        background-color: #fff;
+
+        h2 {
+            color: #000;
+            margin-bottom: 35px;
+
+            span {
+                color: $primary;
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            label {
+                margin-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    display: block;
+                    margin-bottom: 10px;
+                    color: #000;
+                }
+
+                input {
+                    padding-left: 15px;
+                    color: #737373;
+                    line-height: 1.5;
+                    transition: all .3s ease-in-out;
+                    border: 1px solid lightgray;
+                    height: 45px;
+
+                    &:hover {
+                        border-color: $primary;
+                    }
+                }
+
+                .captcha-holder {
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    justify-content: flex-start;
+
+                    input {
+                        width: 47.5%;
+
+                        @include media-breakpoint-down(xs) {
+                            width: 100%;
+                            margin-bottom: 15px;
+                        }
+                    }
+
+                    .captcha-img {
+                        margin-left: 45px;
+                        height: 45px;
+                        display: block;
+                        width: 160px;
+                        background-color: $primary;
+
+                        @include media-breakpoint-down(xs) {
+                            margin: 0 auto;
+                        }
+                    }
+
+                    .captcha-action {
+                        display: flex;
+                        flex-direction: row;
+
+                        @include media-breakpoint-down(xs) {
+                            justify-content: center;
+                        }
+
+                        .captcha-img {
+                            @include media-breakpoint-down(xs) {
+                                margin: 0;
+                            }
+                        }
+                    }
+
+                    button {
+                        margin-left: 25px;
+                        background-color: $primary;
+                        padding: 0 15px;
+                        border-radius: 10px;
+                        transition: all .3s ease-in-out;
+
+                        i,
+                        svg {
+                            color: #fff;
+                        }
+
+                        &:hover,
+                        &:focus {
+                            background-color: $darker;
+                        }
+
+                        @include media-breakpoint-down(xs) {
+                            width: max-content;
+                            height: 45px;
+                        }
+                    }
+
+                    @include media-breakpoint-down(xs) {
+                        flex-direction: column;
+                    }
+                }
+            }
+
+            .rodo {
+                display: flex;
+                flex-direction: row;
+                align-items: baseline;
+                margin-bottom: 20px;
+
+                label {
+                    margin-bottom: 0;
+                }
+
+                input {
+                    margin-right: 15px;
+                }
+            }
+
+            .hold-buttons {
+                margin-top: 25px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                button {
+                    margin-right: 25px;
+
+                    @include media-breakpoint-down(xs) {
+                        margin: 0 auto 15px;
+                        text-align: center;
+                    }
+                }
+
+                button,
+                a {
+
+                    i,
+                    svg {
+                        margin-right: 5px;
+                    }
+                }
+
+                a {
+                    @include media-breakpoint-down(xs) {
+                        margin: 0 auto;
+                        text-align: center;
+                    }
+                }
+
+                @include media-breakpoint-down(xs) {
+                    flex-direction: column;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        padding: 50px 0;
+    }
+
+    .google_holder {
+        margin-top: 0;
+
+        @include media-breakpoint-down(lg) {
+            margin-top: 20px;
+        }
+    }
+}

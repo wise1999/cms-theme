@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FastCMS</title>
+    <link rel="stylesheet" href="dist/styles.css" />
+    <link rel="stylesheet" href="dist/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+        integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <header id="page-header">
+        <div class="container">
+            <div class="navbar-holder">
+                <a href="/" class="navbar-brand">
+                    <h1><i class="fas fa-adjust"></i> Fast<span>CMS</span></h1>
+                </a>
+
+                <button class="mobile-toggler">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+
+                <nav class="navbar">
+                    <button class="close">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </button>
+
+                    <ul class="nav-links">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="">Home</a>
+                        </li>
+                        <li class="nav-item has-children">
+                            <a class="nav-link dropdown-none" href="archive.html">Artykuły
+                                <span class="icon-border"><i class="fa fa-chevron-down"></i></span>
+                            </a>
+                            <ul class="dropdown">
+                                <li><a href="category.html">Motoryzacja</a></li>
+                                <li><a href="category.html">Nieruchomości</a></li>
+                                <li><a href="category.html">Praca</a></li>
+                                <li><a href="category.html">Dom i ogród</a></li>
+                                <li><a href="category.html">Elektronika</a></li>
+                                <li><a href="category.html">Moda</a></li>
+                                <li><a href="category.html">Rolnictwo</a></li>
+                                <li><a href="category.html">Zwierzęta</a></li>
+                                <li><a href="category.html">Dla dzieci</a></li>
+                                <li><a href="category.html">Sport i hobby</a></li>
+                                <li><a href="category.html">Muzyka i edukacja</a></li>
+                                <li><a href="category.html">Ślub i wesele</a></li>
+                                <li><a href="category.html">Oddam za darmo</a></li>
+                                <li><a href="category.html">Zamienię</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-children">
+                            <a class="nav-link dropdown-none" href="archive-firmy.html">Firmy
+                                <span class="icon-border"><i class="fa fa-chevron-down"></i></span>
+                            </a>
+                            <ul class="dropdown">
+                                <li><a href="category-firmy.html">Motoryzacja</a></li>
+                                <li><a href="category-firmy.html">Nieruchomości</a></li>
+                                <li><a href="category-firmy.html">Praca</a></li>
+                                <li><a href="category-firmy.html">Dom i ogród</a></li>
+                                <li><a href="category-firmy.html">Elektronika</a></li>
+                                <li><a href="category-firmy.html">Moda</a></li>
+                                <li><a href="category-firmy.html">Rolnictwo</a></li>
+                                <li><a href="category-firmy.html">Zwierzęta</a></li>
+                                <li><a href="category-firmy.html">Dla dzieci</a></li>
+                                <li><a href="category-firmy.html">Sport i hobby</a></li>
+                                <li><a href="category-firmy.html">Muzyka i edukacja</a></li>
+                                <li><a href="category-firmy.html">Ślub i wesele</a></li>
+                                <li><a href="category-firmy.html">Oddam za darmo</a></li>
+                                <li><a href="category-firmy.html">Zamienię</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-children">
+                            <a class="nav-link dropdown-none" href="archive-ogloszenia.html">Ogłoszenia
+                                <span class="icon-border"><i class="fa fa-chevron-down"></i></span>
+                            </a>
+                            <ul class="dropdown">
+                                <li><a href="category-ogloszenia.html">Motoryzacja</a></li>
+                                <li><a href="category-ogloszenia.html">Nieruchomości</a></li>
+                                <li><a href="category-ogloszenia.html">Praca</a></li>
+                                <li><a href="category-ogloszenia.html">Dom i ogród</a></li>
+                                <li><a href="category-ogloszenia.html">Elektronika</a></li>
+                                <li><a href="category-ogloszenia.html">Moda</a></li>
+                                <li><a href="category-ogloszenia.html">Rolnictwo</a></li>
+                                <li><a href="category-ogloszenia.html">Zwierzęta</a></li>
+                                <li><a href="category-ogloszenia.html">Dla dzieci</a></li>
+                                <li><a href="category-ogloszenia.html">Sport i hobby</a></li>
+                                <li>
+                                    <a href="category-ogloszenia.html">Muzyka i edukacja</a>
+                                </li>
+                                <li><a href="category-ogloszenia.html">Ślub i wesele</a></li>
+                                <li><a href="category-ogloszenia.html">Oddam za darmo</a></li>
+                                <li><a href="category-ogloszenia.html">Zamienię</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Kontakt</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link">Logowanie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="register.html" class="nav-link">Rejestracja</a>
+                        </li>
+                    </ul>
+                    <a href="" class="main-button"><i class="fas fa-plus"></i> Dodaj</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="page-section" id="same-heading" style="background-image: url(img/bg.jpg)">
+        <div class="container">
+            <div class="row row-banner">
+                <div class="col-lg-12">
+                    <div class="hold-infos">
+                        <div class="page-title">
+                            <h1>Użytkownicy</h1>
+                        </div>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                Użytkownicy
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form action="">
+                        <input type="search" name="" placeholder="Czego szukasz?" id="" />
+                        <select name="" id="">
+                            <option value="">Artykuły</option>
+                            <option value="">Kategorie</option>
+                            <option value="">Tagi</option>
+                            <option value="">Użytkownicy</option>
+                        </select>
+                        <input type="submit" class="main-button" value="Szukaj" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section" id="users-list">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="listing">
+                        <div class="title-count">
+                            <h2>Użytkownicy serwisu</h5>
+                                <div class="count">Wszystkich <span>35</span></div>
+                        </div>
+                        <div class="users-wrapper">
+                            <div class="single-user">
+                                <a href="articles-user.html" class="avatar-permalink">
+                                    <img src="img/275x250.jpg" alt="" class="img-fluid">
+                                </a>
+                                <div class="nickname-permalink">
+                                    <a href="articles-user.html">
+                                        <h5>Bogumił Koczkodanov</h5>
+                                    </a>
+                                    <span>Liczba komentarzy: <strong>250</strong></span>
+                                    <span>Liczba artykułów: <strong>250</strong></span>
+                                    <span>Dołączył/a: <strong>11-05-2020</strong></span>
+                                </div>
+                            </div>
+                            <div class="single-user">
+                                <a href="articles-user.html" class="avatar-permalink">
+                                    <img src="img/275x250.jpg" alt="" class="img-fluid">
+                                </a>
+                                <div class="nickname-permalink">
+                                    <a href="articles-user.html">
+                                        <h5>Bogumił Koczkodanov</h5>
+                                    </a>
+                                    <span>Liczba komentarzy: <strong>250</strong></span>
+                                    <span>Liczba artykułów: <strong>250</strong></span>
+                                    <span>Dołączył/a: <strong>11-05-2020</strong></span>
+                                </div>
+                            </div>
+                            <div class="single-user">
+                                <a href="articles-user.html" class="avatar-permalink">
+                                    <img src="img/275x250.jpg" alt="" class="img-fluid">
+                                </a>
+                                <div class="nickname-permalink">
+                                    <a href="articles-user.html">
+                                        <h5>Bogumił Koczkodanov</h5>
+                                    </a>
+                                    <span>Liczba komentarzy: <strong>250</strong></span>
+                                    <span>Liczba artykułów: <strong>250</strong></span>
+                                    <span>Dołączył/a: <strong>11-05-2020</strong></span>
+                                </div>
+                            </div>
+                            <div class="single-user">
+                                <a href="articles-user.html" class="avatar-permalink">
+                                    <img src="img/275x250.jpg" alt="" class="img-fluid">
+                                </a>
+                                <div class="nickname-permalink">
+                                    <a href="articles-user.html">
+                                        <h5>Bogumił Koczkodanov</h5>
+                                    </a>
+                                    <span>Liczba komentarzy: <strong>250</strong></span>
+                                    <span>Liczba artykułów: <strong>250</strong></span>
+                                    <span>Dołączył/a: <strong>11-05-2020</strong></span>
+                                </div>
+                            </div>
+                            <div class="single-user">
+                                <a href="articles-user.html" class="avatar-permalink">
+                                    <img src="img/275x250.jpg" alt="" class="img-fluid">
+                                </a>
+                                <div class="nickname-permalink">
+                                    <a href="articles-user.html">
+                                        <h5>Bogumił Koczkodanov</h5>
+                                    </a>
+                                    <span>Liczba komentarzy: <strong>250</strong></span>
+                                    <span>Liczba artykułów: <strong>250</strong></span>
+                                    <span>Dołączył/a: <strong>11-05-2020</strong></span>
+                                </div>
+                            </div>
+                            <div class="single-user">
+                                <a href="articles-user.html" class="avatar-permalink">
+                                    <img src="img/275x250.jpg" alt="" class="img-fluid">
+                                </a>
+                                <div class="nickname-permalink">
+                                    <a href="articles-user.html">
+                                        <h5>Bogumił Koczkodanov</h5>
+                                    </a>
+                                    <span>Liczba komentarzy: <strong>250</strong></span>
+                                    <span>Liczba artykułów: <strong>250</strong></span>
+                                    <span>Dołączył/a: <strong>11-05-2020</strong></span>
+                                </div>
+                            </div>
+                            <div class="single-user">
+                                <a href="articles-user.html" class="avatar-permalink">
+                                    <img src="img/275x250.jpg" alt="" class="img-fluid">
+                                </a>
+                                <div class="nickname-permalink">
+                                    <a href="articles-user.html">
+                                        <h5>Bogumił Koczkodanov</h5>
+                                    </a>
+                                    <span>Liczba komentarzy: <strong>250</strong></span>
+                                    <span>Liczba artykułów: <strong>250</strong></span>
+                                    <span>Dołączył/a: <strong>11-05-2020</strong></span>
+                                </div>
+                            </div>
+                            <div class="single-user">
+                                <a href="articles-user.html" class="avatar-permalink">
+                                    <img src="img/275x250.jpg" alt="" class="img-fluid">
+                                </a>
+                                <div class="nickname-permalink">
+                                    <a href="articles-user.html">
+                                        <h5>Bogumił Koczkodanov</h5>
+                                    </a>
+                                    <span>Liczba komentarzy: <strong>250</strong></span>
+                                    <span>Liczba artykułów: <strong>250</strong></span>
+                                    <span>Dołączył/a: <strong>11-05-2020</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="archive-count">
+                        <div>Profile: 24 Lista 1 - 2</div>
+                        <div class="">
+                            <ul class="" id="myapppagination">
+                                <li class="page-item active">
+                                    <a href="users.html" class="page-link">1</a>
+                                </li>
+                                <li><a href="users.html" class="page-link">2</a></li>
+                                <li><a href="users.html" class="page-link">3</a></li>
+                                <li><a href="users.html" class="page-link">4</a></li>
+                                <li class="disabled"><span>...</span></li>
+                                <li><a href="users.html" class="page-link">12</a></li>
+                                <li class="page-item">
+                                    <a href="users.html" class="page-link">Następne »</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section" id="bannered">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="wrapper-ads">
+                        <span class="advert">Reklama Google</span>
+                        <div class="ad_single">970x90</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="page-footer">
+        <div class="newsletter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h5>Newsletter</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <form action="">
+                            <input type="email" name="" placeholder="Email" id="" />
+                            <input type="submit" class="second-button" value="Zapisz się" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="row row-footer-items">
+                    <div class="col-lg">
+                        <h5>O nas</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident rerum unde possimus
+                            molestias dolorem fuga, illo quis fugiat!
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <div class="footer-menu">
+                            <h5>Nawigacja</h5>
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="archive.html">Artykuły</a></li>
+                                <li><a href="archive-firmy.html">Firmy</a></li>
+                                <li><a href="archive-ogloszenia.html">Ogłoszenia</a></li>
+                                <li><a href="contact.html">Kontakt</a></li>
+                                <li><a href="login.html">Logowanie</a></li>
+                                <li><a href="register.html">Rejestracja</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <div class="footer-menu">
+                            <h5>Śledź nas</h5>
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="archive.html">Artykuły</a></li>
+                                <li><a href="archive-firmy.html">Firmy</a></li>
+                                <li><a href="archive-ogloszenia.html">Ogłoszenia</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg">
+                        <form action="">
+                            <input type="search" name="" placeholder="Szukaj..." id="" />
+                            <input type="submit" class="main-button" value="Szukaj" />
+                        </form>
+                    </div>
+                </div>
+                <div class="border-line"></div>
+                <div class="col-lg-12">
+                    <span>Copyright &copy; 2021 Wszelkie Prawa zastrzeżone.
+                        <a href="/">FastCMS</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="js/all.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

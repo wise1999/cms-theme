@@ -1,0 +1,216 @@
+@mixin google-250 {
+    .google_holder {
+        margin-top: 20px;
+        border-radius: 10px;
+        padding: 30px;
+        background-color: #fff;
+
+        .wrapper-ads {
+            display: flex;
+            margin: 0 auto;
+            justify-content: center;
+            flex-direction: column;
+            width: 200px;
+
+            .advert {
+                font-size: 14px;
+                color: $text;
+                font-weight: 300;
+                text-align: left;
+                margin-bottom: 10px;
+                display: block;
+                width: max-content;
+            }
+
+            .ad_single {
+                width: 200px;
+                height: 200px;
+                background-color: #737373;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 45px;
+                color: #fff;
+                font-weight: 600;
+            }
+        }
+
+        @include media-breakpoint-down(xl) {
+            padding: 30px 5px;
+        }
+
+        &.google_250 {
+            .wrapper-ads {
+                width: 250px;
+            }
+
+            .ad_single {
+                width: 250px;
+                height: 250px;
+            }
+        }
+
+        &.google_300x600 {
+            .wrapper-ads {
+                width: 300px;
+            }
+
+            .ad_single {
+                width: 300px;
+                height: 600px;
+            }
+        }
+
+        &.google_300x200 {
+            .wrapper-ads {
+                width: 300px;
+            }
+
+            .ad_single {
+                width: 300px;
+                height: 200px;
+            }
+        }
+
+        &.google_300x100 {
+            .wrapper-ads {
+                width: 300px;
+            }
+
+            .ad_single {
+                width: 300px;
+                height: 100px;
+            }
+        }
+
+        &.google_200x200 {
+            .wrapper-ads {
+                width: 200px;
+            }
+
+            .ad_single {
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+        &.google_300x250 {
+            .wrapper-ads {
+                width: 300px;
+            }
+
+            .ad_single {
+                width: 300px;
+                height: 250px;
+            }
+        }
+
+        &.google_336x280 {
+            .wrapper-ads {
+                width: 336px;
+            }
+
+            .ad_single {
+                width: 336px;
+                height: 280px;
+            }
+        }
+
+        &.google_728x90 {
+            .wrapper-ads {
+                width: 728px;
+            }
+
+            .ad_single {
+                width: 728px;
+                height: 90px;
+            }
+        }
+
+        &.google_468x60 {
+            .wrapper-ads {
+                width: 468px;
+            }
+
+            .ad_single {
+                width: 468px;
+                height: 60px;
+            }
+        }
+
+        &.google_160x600 {
+            .wrapper-ads {
+                width: 160px;
+            }
+
+            .ad_single {
+                width: 160px;
+                height: 600px;
+            }
+        }
+
+        &.google_200x200 {
+            .wrapper-ads {
+                width: 200px;
+            }
+
+            .ad_single {
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+        &.google_250x250 {
+            .wrapper-ads {
+                width: 250px;
+            }
+
+            .ad_single {
+                width: 250px;
+                height: 250px;
+            }
+        }
+    }
+}
+
+@mixin bannered {
+    #bannered {
+        padding: 75px 0;
+
+        .wrapper-ads {
+            max-width: 970px;
+            width: 100%;
+            display: flex;
+            margin: 0 auto;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        span {
+            font-size: 14px;
+            color: $text;
+            font-weight: 300;
+            text-align: left;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .ad_single {
+            width: 100%;
+            height: 90px;
+            background-color: $text;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 45px;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        @include media-breakpoint-down(lg) {
+            padding: 50px 0;
+        }
+    }
+}
